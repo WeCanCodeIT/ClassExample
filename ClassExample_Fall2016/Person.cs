@@ -18,11 +18,25 @@ namespace ClassExample_Fall2016
 
         //Properties
 
+        public int Age
+        {
+            get { return this.age; }
+            set { this.age = value; }
+        }
+
         //Constructors
         public Person()
         {
             age = 20;
             name = "John Doe";
+            eyeColor = "Brown";
+            greeting = "Nice to meet you.";
+        }
+
+        public Person(string newName)
+        {
+            age = 20;
+            name = newName;
             eyeColor = "Brown";
             greeting = "Nice to meet you.";
         }
@@ -34,6 +48,7 @@ namespace ClassExample_Fall2016
             eyeColor = newEyeColor;
             greeting = newGreeting;
         }
+
 
 
         //Methods
@@ -49,8 +64,6 @@ namespace ClassExample_Fall2016
         // returns the person's name and age in a description in a string
         private string Description()
         {
-            int age;
-            age = 20;
 
             //the temporary string we're using to build our return
             string tempString;
