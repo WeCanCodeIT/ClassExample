@@ -27,6 +27,15 @@ namespace ClassExample_Fall2016
             greeting = "Nice to meet you.";
         }
 
+        public Person(int newAge, string newName, string newEyeColor, string newGreeting)
+        {
+            age = newAge;
+            name = newName;
+            eyeColor = newEyeColor;
+            greeting = newGreeting;
+        }
+
+
         //Methods
 
         //This method takes a string input, then prints out a greeting for a person

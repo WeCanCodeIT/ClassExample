@@ -16,6 +16,11 @@ namespace ClassExample_Fall2016
 
             thisPerson.Greet("Jarryd");
 
+            Console.WriteLine();
+
+            Person secondPerson = new Person();
+
+            secondPerson.Greet("Clone Jarryd");
         }
     }
 }
