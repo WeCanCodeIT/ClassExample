@@ -8,6 +8,7 @@ namespace ClassExample_Fall2016
 {
     class Person
     {
+        //fields
         private int age;
         private string name;
 
@@ -15,18 +16,30 @@ namespace ClassExample_Fall2016
 
         public string greeting;
 
+        //Properties
 
+        //Constructors
+
+
+        //Methods
+
+        //This method takes a string input, then prints out a greeting for a person
         public void Greet(string name)
         {
+            //provide the output for this method
             Console.WriteLine("Hello" + name + ". "+ greeting);
         }
 
+        // returns the person's name and age in a description in a string
         private string Description()
         {
+            //the temporary string we're using to build our return
             string tempString;
 
+            //building our temporary string
             tempString = "I am " + name + " and I am " + age + " years old.";
 
+            //returning the result
             return tempString;
         }
     }
