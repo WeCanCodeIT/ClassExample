@@ -15,5 +15,19 @@ namespace ClassExample_Fall2016
 
         public string greeting;
 
+
+        public void Greet(string name)
+        {
+            Console.WriteLine("Hello" + name + ". "+ greeting);
+        }
+
+        private string Description()
+        {
+            string tempString;
+
+            tempString = "I am " + name + " and I am " + age + " years old.";
+
+            return tempString;
+        }
     }
 }
