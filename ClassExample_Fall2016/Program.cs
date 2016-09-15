@@ -11,6 +11,11 @@ namespace ClassExample_Fall2016
         static void Main(string[] args)
         {
             Console.WriteLine("This is the beginning of our class example.");
+
+            Person thisPerson = new Person();
+
+            thisPerson.Greet("Jarryd");
+
         }
     }
 }

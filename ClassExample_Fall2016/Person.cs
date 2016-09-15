@@ -19,7 +19,13 @@ namespace ClassExample_Fall2016
         //Properties
 
         //Constructors
-
+        public Person()
+        {
+            age = 20;
+            name = "John Doe";
+            eyeColor = "Brown";
+            greeting = "Nice to meet you.";
+        }
 
         //Methods
 
@@ -27,12 +33,16 @@ namespace ClassExample_Fall2016
         public void Greet(string name)
         {
             //provide the output for this method
-            Console.WriteLine("Hello" + name + ". "+ greeting);
+            Console.WriteLine("Hello " + name + ". "+ greeting);
+            Console.WriteLine(Description());
         }
 
         // returns the person's name and age in a description in a string
         private string Description()
         {
+            int age;
+            age = 20;
+
             //the temporary string we're using to build our return
             string tempString;
 
