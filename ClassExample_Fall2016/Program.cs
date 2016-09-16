@@ -24,7 +24,14 @@ namespace ClassExample_Fall2016
             //secondPerson.Greet("Clone Jarryd");
 
             Student freshman = new Student("John Doe", 19, "University School", "Underwater Basket Weaving", 3.0);
+            freshman.Name = "Johnny Doe";
 
+            for (int i = 0; i < 10; i++)
+            {
+                freshman.PrintAllDetails();
+                freshman.Birthday();
+                //System.Threading.Thread.Sleep(500);
+            }
         }
     }
 }

@@ -73,6 +73,11 @@ namespace ClassExample_Fall2016
             Console.WriteLine(sb.ToString());
 
         }
+
+        public void Birthday()
+        {
+            age++;
+        }
     }
 }
 
