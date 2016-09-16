@@ -17,10 +17,21 @@ namespace ClassExample_Fall2016
 
         //Properties
 
+
+
         //Constructors
         public Student()
         {
 
+        }
+
+        public Student(string fullName, int age, string university, string major, float gpa)
+        {
+            this.fullName = fullName;
+            this.age = age;
+            this.university = university;
+            this.major = major;
+            this.gpa = gpa;
         }
 
         //Methods
