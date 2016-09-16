@@ -12,7 +12,7 @@ namespace ClassExample_Fall2016
         private string fullName;
         private int age;
         private string university;
-        private float gpa;       
+        private double gpa;       
 
         //Properties
         public string Name
@@ -32,13 +32,9 @@ namespace ClassExample_Fall2016
             get { return this.university; }
         }
 
-        public string Major
-        {
-            get;
-            set;
-        }
+        public string Major { get;  set;}
 
-        public float GPA
+        public double GPA
         {
             get { return this.gpa; }
             set { this.gpa = value; }  
@@ -50,7 +46,7 @@ namespace ClassExample_Fall2016
 
         }
 
-        public Student(string fullName, int age, string university, string major, float gpa)
+        public Student(string fullName, int age, string university, string major, double gpa)
         {
             this.fullName = fullName;
             this.age = age;
@@ -60,5 +56,29 @@ namespace ClassExample_Fall2016
         }
 
         //Methods
+
+        public void PrintAllDetails()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(fullName);
+            sb.Append(", ");
+            sb.Append(age);
+            sb.Append(", ");
+            sb.Append(university);
+            sb.Append(", ");
+            sb.Append(Major);
+            sb.Append(", ");
+            sb.Append(gpa);
+
+            Console.WriteLine(sb.ToString());
+
+        }
     }
 }
+
+
+
+
+
+
+

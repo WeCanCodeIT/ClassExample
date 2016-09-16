@@ -12,16 +12,19 @@ namespace ClassExample_Fall2016
         {
             Console.WriteLine("This is the beginning of our class example.");
 
-            //our first person instance
-            Person thisPerson = new Person();
-            thisPerson.Greet("Jarryd");
-            
-            Console.WriteLine();
-        
-            //Our second person instance
-            Person secondPerson = new Person(25, "Lupe", "Purple", "Whattup?");
-            secondPerson.greeting = "How's it going?";
-            secondPerson.Greet("Clone Jarryd");
+            ////our first person instance
+            //Person thisPerson = new Person();
+            //thisPerson.Greet("Jarryd");
+
+            //Console.WriteLine();
+
+            ////Our second person instance
+            //Person secondPerson = new Person(25, "Lupe", "Purple", "Whattup?");
+            //secondPerson.greeting = "How's it going?";
+            //secondPerson.Greet("Clone Jarryd");
+
+            Student freshman = new Student("John Doe", 19, "University School", "Underwater Basket Weaving", 3.0);
+
         }
     }
 }
